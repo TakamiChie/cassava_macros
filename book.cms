@@ -1,0 +1,9 @@
+/*
+  章番号自動振り用の関数。
+  「=book.chnum([x,y-1],[x+1,y])」と書いておくと、章題が入力された(新しい章になった)ときに数字が1インクリメントされる
+*/
+function chnum(prevcell, chtitle){
+  num = prevcell;
+  if(chtitle != ""){ num++; }
+  return num;
+}
